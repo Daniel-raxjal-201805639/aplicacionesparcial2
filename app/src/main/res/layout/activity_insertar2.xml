@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".insertarActivity2">
+
+    <TextView
+        android:id="@+id/agregar_tv_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:gravity="center"
+        android:layout_margin="25sp"
+        android:textSize="100px"
+        />
+
+    <TextView
+        android:id="@+id/agregar_tv_subtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agregar_tv_titulo"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="25sp"
+        android:gravity="center"
+        android:text="Agregar Estudiante"
+        android:textSize="70px" />
+
+    <EditText
+        android:id="@+id/creat_estudiante_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/agregar_tv_subtitulo"
+        android:layout_marginTop="15sp"
+        android:gravity="center"
+        android:hint="Estudiante Id"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/creat_estudiante_nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creat_estudiante_id"
+        android:gravity="center"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/creat_estudiante_ape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creat_estudiante_nom"
+        android:gravity="center"
+        android:hint="Apellido"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/creat_estudiante_grado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/creat_estudiante_ape"
+        android:gravity="center"
+        android:hint="Grado"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/creat_estudiante_nivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/creat_estudiante_grado"
+        android:gravity="center"
+        android:hint="Nivel Academico"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/creat_estudiante_secc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creat_estudiante_nivel"
+        android:gravity="center"
+        android:hint="Sección"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/creat_estudiante_nota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creat_estudiante_secc"
+        android:gravity="center"
+        android:hint="Nota Final"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/creat_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/creat_estudiante_nota"
+        android:backgroundTint="#165904"
+        android:text="Agregar Estudiante" />
+
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/creat_btn"
+        android:layout_marginBottom="-61dp"
+        android:backgroundTint="#0F4E04"
+        android:text="Regresar" />
+
+</RelativeLayout>
